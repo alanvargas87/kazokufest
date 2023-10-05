@@ -18,6 +18,11 @@ header{
     padding: 10px
 }
 
+h2{
+    font-family: Bebas Neue;
+    font-size: 50px;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -30,7 +35,7 @@ nav a{
 }
 
 .logo img{
-    height: 50px;
+    height: 100px;
     margin-right: 11px;
 }
 
@@ -38,5 +43,44 @@ nav a{
     max-width: 1305px;
     max-height: 710px;
     
+}
+
+
+h1{
+  
+    display: block;
+    text-align: center;
+    font-size: 72px;
+    font-family: Bebas Neue;
+    color: white;
+
     
+}
+
+p{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-decoration: solid;
+    font-family: Oswald
+    
+
+    
+    
+}
+
+
+
+body{
+    background-image: url(../imagenes/Back.jpg) ; 
+    background-size: contain;
+    
+}
+
+.textodestacado{
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    font-family: Roboto Condensed
+
+
 }
