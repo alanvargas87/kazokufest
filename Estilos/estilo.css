@@ -33,3 +33,10 @@ nav a{
     height: 50px;
     margin-right: 11px;
 }
+
+.banner img{
+    max-width: 1305px;
+    max-height: 710px;
+    
+    
+}
