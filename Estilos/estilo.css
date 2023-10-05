@@ -21,7 +21,10 @@ header{
 h2{
     font-family: Bebas Neue;
     font-size: 50px;
+    color: white;
 }
+
+
 
 .logo{
     display: flex;
@@ -83,4 +86,31 @@ body{
     font-family: Roboto Condensed
 
 
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+.contenedor-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.evento{
+    border: 2px solid white;
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
 }
