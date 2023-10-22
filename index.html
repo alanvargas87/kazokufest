@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./Estilos/estilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,117 +10,164 @@
 
 <body>
 
+   
+
     <header>
-        <a href="#" class="logo">
-            <img src="./imagenes/logokazoku.png" alt="logo evento">
-            <h2 class="nombre evento">Kazoku Fest</h2>
-        </a>
+        
+       
+        
+
         <nav>
-            <a href="" class="navlink">Inicio</a>
-            <a href="" class="navlink">Quienes Somos</a>
-            <a href="" class="navlink">Galeria</a>
-            <a href="" class="navlink">Entradas</a>
-            <a href="" class="navlink">Contacto</a>
+            
+            <!-- ACA ESTA LA BARRA DE NAVEGACION DE LA PAGINA, CON SU LOGO INCLUIDO -->
+
+            <ul class="navmenu">
+                
+                <a href="#" class="logoevento">
+                    <img src="./imagenes/logokazoku.png" alt="logo evento">
+                    <h3>Kazoku Fest</h3>
+                </a>
+                <a href="" class="navlink">Inicio</a>
+                <a href="#quienessomos" class="navlink">Quienes Somos</a>
+                <a href="#galeria" class="navlink">Galeria</a>
+                <a href="" class="navlink">Entradas</a>
+                <a href="" class="navlink">Contacto</a>
+
+                 <!-- ARCHIVO SVG CREADO CON EL ICONO DEL MENU HAMBURGUESA  -->
+
+                <label for="menu" class="menuham">
+                    <img src="./assets/menu.svg" class="botonmenu">
+                </label>
+                <input type="checkbox" id="menu">
+        
+            </ul>
+            
         </nav>
     </header>
-    <div class="banner">
-        <img src="./imagenes/banner.jpg" alt="banner evento">
-    </div>
-    <br>
-    <br>
-    <div class="descripcion">
+    
+    <!-- CARRUSEL DE BANNERS CON INFORMACION DEL EVENTO -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/banner.jpg" class="d-block w-100" alt="banner del evento">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/actividades.jpg" class="d-block w-100" alt="actividades del evento">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/plano.jpg" class="d-block w-100" alt="plano del lugar">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+   
+
+     
+      <!-- UNA DESCRIPCION SOBRE DE QUE TRATA EL EVENTO E HISTORIA DE SU CREACION CON UN VIDEO REFERENCIAL AL TEMA -->
+
+   
+    <div class="descripciondelevento" id="quienessomos" style="margin-top: 100px;">
         <h1>¿QUIENES SOMOS?</h1>
         <P><i><strong>Somos el evento nocturno <span class="textodestacado">100% ANIME</span> dedicado para amantes del mismo. Nuestros origenes fueron alla por el año 2015 luego de festejar un cumpleaños y desde alli que tuvimos el
         anhelo de llevar a cabo lo que armamos ese dia al publico en general y poder compartir con todo el mundo el amor que tenemos por el anime. <span class="textodestacado2"> Te invitamos a ver el siguiente video donde te contamos todos los detalles sobre el nacimiento de este hermoso evento</strong></span></i></P>
     
     </div>
-    <div style="text-align: center;">
+    <div class="videodeyoutube" style="text-align: center;">
         <iframe width="640" height="480" src="https://www.youtube.com/embed/VY4ApGErDiI?si=FT6tZE5cjC0cSeCm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
+    <div></div>
 
-    <div> 
+    <!-- GALERIA DE FOTOS TOMADAS EN DIFERENTES EVENTOS SEGUN SU EDICION -->
+
+    <div style="margin-top: 50px;" id="galeria"> 
         <h1>FOTOS DE NUESTROS EVENTOS</h1>
     </div>
 
+    <div class="galeriasdefotos">
+        <div class="card">
+          <img src="./portadagaleria/kazokusep.jpg" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">KAZOKU FEST XVI</h2>
+            <a href="#" class="btn btn-primary" style="margin-left: 40%;">Entrar</a>
 
-    <div class="contenedor">
-        <div class="contenedor-galeria">
-
-            <div class="evento"  style="background-image: url(./portadagaleria/kazokusep.jpg);">
-              <div class="textosgaleria">
-                <h3>Kazoku Fest XVI</h3>
-              </div>
-            </div>
-
-            <div class="evento"  style="background-image: url(./portadagaleria/kazoku15.jpg);">
-                <div class="textosgaleria">
-                  <h3>Kazoku Fest XV</h3>
-                </div>
-            </div>
-
-            <div class="evento"  style="background-image: url(./portadagaleria/kazoku14.jpg);">
-                <div class="textosgaleria">
-                  <h3>Kazoku Fest XIV</h3>
-                </div>
-            </div>
-
-            <div class="evento"  style="background-image: url(./portadagaleria/kazoku13.jpg);">
-                <div class="textosgaleria">
-                  <h3>Kazoku Fest XII</h3>
-                </div>
-            </div>
-
-            <div class="evento"  style="background-image: url(./portadagaleria/kazoku12.jpg);">
-                <div class="textosgaleria">
-                  <h3>Kazoku Fest XII</h3>
-                </div>
-            </div>
-
-            <div class="evento"  style="background-image: url(./portadagaleria/kazoku11.jpg);">
-                <div class="textosgaleria">
-                  <h3>Kazoku Fest XI</h3>
-                </div>
-            </div>
-
-
-
-
-
-
-
+          </div>
         </div>
-        
+        <div class="card">
+          <img src="./portadagaleria/kazoku15.jpg" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">KAZOKU FEST XV</h2>
+            <a href="#" class="btn btn-primary" style="margin-left: 40%;">Entrar</a>
 
+          </div>
+        </div>
+        <div class="card">
+          <img src="./portadagaleria/kazoku14.jpg" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">KAZOKU FEST XIV</h2>
+            <a href="#" class="btn btn-primary" style="margin-left: 40%;">Entrar</a>
+          </div>
+        </div>
+        <div class="card">
+            <img src="./portadagaleria/kazoku13.jpg" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">KAZOKU FEST XIII</h2>
+              <a href="#" class="btn btn-primary" style="margin-left: 40%;" >Entrar</a>
+  
+            </div>
+          </div>
+          <div class="card">
+            <img src="./portadagaleria/kazoku12.jpg" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">KAZOKU FEST XII</h2>
+              <a href="#" class="btn btn-primary" style="margin-left: 40%;">Entrar</a>
+  
+            </div>
+          </div>
+          <div class="card">
+            <img src="./portadagaleria/kazoku11.jpg" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">KAZOKU FEST XI</h2>
+              <a href="#" class="btn btn-primary" style="margin-left: 40%;">Entrar</a>
+            </div>
+          </div>
+      </div>
+    
         
     </div>
     <br>
     <br>
     <br>
-  
 
+                <!-- FOOTER DONDE ESTAN PUESTAS LAS DIFERENTES REDES SOCIALES DEL EVENTO       -->
+    <footer>
+        <h5>SEGUINOS EN NUESTRAS REDES SOCIALES ♥</h5>
+        
     
+        <div class="logosredes">
+            <a href="https://www.facebook.com/kazokufestoficial" target="_blank"><img src="./iconos/facebook_logo_icon_256991.png" id="facebook"></a>
+            <a href="https://www.instagram.com/kazoku.fest/" target="_blank"><img src="./iconos/instagram_logo_icon_256987.png" id="instagram"></a>
+            <a href="https://twitter.com/Kazoku_Fest" target="_blank"><img src="./iconos/twitter_logo_icon_256992.png" id="twitter"></a>
+            <a href="https://www.youtube.com/@KazokuFest" target="_blank"><img src="./iconos/youtube_logo_icon_256985.png" id="youtube"></a>
+            
+    
+        </div>
+    
+        <h6>Copyright ©2023 Kazoku Fest es una marca registrada. Todos los derechos reservados.</h6>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
 </body>
 
-<footer>
-    <h5>SEGUINOS EN NUESTRAS REDES SOCIALES ♥</h5>
-    
-
-    <div class="logosredes">
-        <a href="https://www.facebook.com/kazokufestoficial"><img src="./iconos/facebook_logo_icon_256991.png" alt="facebook"></a>
-        <a href="https://www.instagram.com/kazoku.fest/"><img src="./iconos/instagram_logo_icon_256987.png" alt="instagram"></a>
-        <a href="https://twitter.com/Kazoku_Fest"><img src="./iconos/twitter_logo_icon_256992.png" alt="twitter"></a>
-        <a href="https://www.youtube.com/@KazokuFest"><img src="./iconos/youtube_logo_icon_256985.png" alt="youtube"></a>
-        
-
-    </div>
-
-    <h6>Copyright ©2023 Kazoku Fest es una marca registrada. Todos los derechos reservados.</h6>
-</footer>
 
 
 </html>    
