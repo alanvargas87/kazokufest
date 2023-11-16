@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../imagenes/neon7.webp);
+    background-size: cover;
+    color: white;
+}
+
+section{
+    font-family: bebas neue;
+    font-size: 70px;
+    padding-left: 260px;
+    text-shadow: 3px 3px black; 
+}
+
+.metodos h2{
+    margin-top: 140px;
+    text-align: center;
+    font-size: 42px;
+    font-family: Bebas Neue;
+    text-shadow: 2px 2px black;
+    width: 70%; 
+}
+
+.metodos p{
+    width: 70%;
+    padding: 20px;
+    font-size: 25px;
+    font-family: Oswald;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    margin-top: 10px;      
+}
+
+.metodos a{
+    padding: 16px 25px;
+    margin-left: 200px;
+    font-family:Verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
+    background-color: blueviolet;
+    border-radius: 30px;
+    justify-content: center; 
+}
+
+@media (max-width: 768px){
+    section{
+        font-size: 50px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .metodos h2{
+        margin-top: 100px;
+        text-align: center;
+        
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .metodos p{
+        width: 100%;
+    }
+
+    .metodos a{
+        margin-left: 30px;
+        width: 100%
+    }
+}
