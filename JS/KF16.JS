@@ -22,3 +22,4 @@ closeModal.addEventListener('click', ()=>{
     containerImage.classList.toggle('move');
     imageContainer.classList.toggle('show')
 })
+

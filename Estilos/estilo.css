@@ -3,6 +3,20 @@ body{
     margin: 0;
 }
 
+
+
+#nocmode{
+    display: none
+}
+
+#label_nocmode{
+    position: absolute;
+    color: yellow;
+    cursor: pointer;
+    font-size: 2em;
+    right:920px
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -81,10 +95,16 @@ p{
        
 }
 
-body{
+.dark{
     background-image: url(../imagenes/neon5.png) ; 
     background-size: contain;;
     background-repeat:repeat-y    
+}
+
+body{
+    background-image: none;
+    background-color: black;
+    transition: all 1.5 ease-in;
 }
 
 .textodestacado{
@@ -141,7 +161,8 @@ footer{
     width: 1304px;
     height: 200px;
     display: grid;
-    background-color: white;
+    background-color: black;
+    color: white;
     text-align: left;
     font-size: 50px;
     font-family: Bebas Neue;   
